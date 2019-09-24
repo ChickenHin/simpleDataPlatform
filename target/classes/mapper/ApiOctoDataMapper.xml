@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meituan.qa.domain.mapper.ApiOctoDataMapper">
+    <resultMap id="apiData" type="com.meituan.qa.bean.ApiData">
+        <result column="tp95" jdbcType="INTEGER" property="tp95"></result>
+        <result column="tp99" jdbcType="INTEGER" property="tp99"></result>
+    </resultMap>
+
+    <insert id="insertApiOctoData">
+        insert into api_octo_data (api,tp95,tp99,datatime)
+        values (#{api}, #{tp95}, #{tp99}, #{datatime})
+    </insert>
+
+    <select id="selectApiOctoData" resultMap="apiData">
+        select tp95,tp99
+        from api_octo_data
+        where api = #{api} and <![CDATA[datatime >= #{startTime}]]> and <![CDATA[datatime <= #{endTime}]]>
+        order by datatime
+    </select>
+</mapper>

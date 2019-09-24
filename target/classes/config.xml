@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<config> 
+  <CRM>
+    <com.sankuai.mtarm.core>
+      <TCrmResourceQueryService.findPoiActionRightsDetails opt="true"></TCrmResourceQueryService.findPoiActionRightsDetails>
+      <TCrmResourceQueryService.searchWithGeo opt="true"></TCrmResourceQueryService.searchWithGeo>
+      <ActivityCoreThriftService.getActivityList opt="true"></ActivityCoreThriftService.getActivityList>
+      <CoreMultiBizPrivateSeaService.findPrivateSeaStatSummary opt="true"></CoreMultiBizPrivateSeaService.findPrivateSeaStatSummary>
+      <TCrmResourceQueryService.searchPoi></TCrmResourceQueryService.searchPoi>
+      <PoiTagRpcService.searchPoiV2ByQueryVo></PoiTagRpcService.searchPoiV2ByQueryVo>
+      <CoreThriftFacadeService.getPoiBusinessData></CoreThriftFacadeService.getPoiBusinessData>
+      <ActivityCoreThriftService.getActivityListAllInfo></ActivityCoreThriftService.getActivityListAllInfo>
+      <PoiQualityInfoRpcService.getQualityDetailByDataIds opt="true"></PoiQualityInfoRpcService.getQualityDetailByDataIds>
+    </com.sankuai.mtarm.core>
+    <com.sankuai.meishi.crmtask>
+      <ItemController.itemList opt="true"></ItemController.itemList>
+      <ItemController.getBizInfo></ItemController.getBizInfo>
+      <ComplainThriftService.getBizOwnerByPoiId opt="true"></ComplainThriftService.getBizOwnerByPoiId>
+      <TaskController.taskList opt="true"></TaskController.taskList>
+      <TaskController.taskCount opt="true"></TaskController.taskCount>
+      <TaskMomaRpcService.getTasks opt="true"></TaskMomaRpcService.getTasks>
+    </com.sankuai.meishi.crmtask>
+    <com.sankuai.meishi.crm.notify></com.sankuai.meishi.crm.notify>
+    <com.sankuai.meishi.crm.crmdata>
+      <BoardRpcService.getIndicatorValue opt="true"></BoardRpcService.getIndicatorValue>
+      <BoardRpcService.getMetasByOrgStrV2 opt="true"></BoardRpcService.getMetasByOrgStrV2>
+      <PoiDataRpcService.getIndicatorTendency opt="true"></PoiDataRpcService.getIndicatorTendency>
+      <PcPoiDataService.getIndicatorTendency opt="true"></PcPoiDataService.getIndicatorTendency>
+      <BoardRpcService.getPoiIndicatorDetail opt="true"></BoardRpcService.getPoiIndicatorDetail>
+    </com.sankuai.meishi.crm.crmdata>
+    <com.sankuai.cos.mop>
+      <DxDealController.getMyDealList opt="true"></DxDealController.getMyDealList>
+      <KeHuController.getKeHuContractList opt="true"></KeHuController.getKeHuContractList>
+      <DxDealController.getDealAllStatusNum opt="true"></DxDealController.getDealAllStatusNum>
+      <DxDealController.getDealShortcutNum opt="true"></DxDealController.getDealShortcutNum>
+    </com.sankuai.cos.mop>
+  </CRM>  
+  <SCP>
+    <com.sankuai.cos.groupbd>
+      <ApiMobileController.query opt="true"></ApiMobileController.query>
+      <PageController.showProductList opt="true"></PageController.showProductList>
+      <ApiProductListController.queryProducts opt="true"></ApiProductListController.queryProducts>
+      <GroupPhotoService.searchPhotos opt="true"></GroupPhotoService.searchPhotos>
+      <ChangeAuditController.getChangeData opt="true"></ChangeAuditController.getChangeData>
+      <CategoryController.getAllCategory opt="true"></CategoryController.getAllCategory>
+      <ChangeAuditController.getChangeData opt="true"></ChangeAuditController.getChangeData>
+      <ProductController.copy opt="true"></ProductController.copy>
+    </com.sankuai.cos.groupbd>
+    <com.sankuai.cos.mtdiscount>
+      <DiscountController.profitCheck opt="true"></DiscountController.profitCheck>
+      <MomaApiController.momaSearch opt="true"></MomaApiController.momaSearch>
+      <CoopController.coopMaidanList opt="true"></CoopController.coopMaidanList>
+      <DiscountController.getTemplate opt="true"></DiscountController.getTemplate>
+      <DiscountController.getValue opt="true"></DiscountController.getValue>
+      <PoiController.show opt="true"></PoiController.show>
+    </com.sankuai.cos.mtdiscount>
+    <com.sankuai.meishi.scp.datacenter opt="true"></com.sankuai.meishi.scp.datacenter>
+    <com.sankuai.cos.product>
+      <ApiProductController.searchByPost opt="true"></ApiProductController.searchByPost>
+      <TProductRemoteService.getConsumeUnitsByPartners opt="true"></TProductRemoteService.getConsumeUnitsByPartners>
+      <TProductRemoteService.getConsumeUnitsByPartner opt="true"></TProductRemoteService.getConsumeUnitsByPartner>
+    </com.sankuai.cos.product>
+    <com.sankuai.meishi.customer>
+      <CloudWebController.getTempUrl opt="true"></CloudWebController.getTempUrl>
+      <CustomerPoiService.getPartnerIdListByPoiId opt="true"></CustomerPoiService.getPartnerIdListByPoiId>
+      <CustomerBaseService.getPartnerBaseInfoByIds opt="true"></CustomerBaseService.getPartnerBaseInfoByIds>
+      <CustomerBaseService.getQualificationByPartnerId opt="true"></CustomerBaseService.getQualificationByPartnerId>
+      <CustomerApiController.searchByES opt="true"></CustomerApiController.searchByES>
+    </com.sankuai.meishi.customer>
+    <com.sankuai.cos.mtcoop>
+      <CoopBaseService.changeCoopBd opt="true"></CoopBaseService.changeCoopBd>
+    </com.sankuai.cos.mtcoop>
+    <com.meituan.cos.mtdeal2-web-sh>
+      <TDealManagementRemoteService.sendMailAndSms opt="true"></TDealManagementRemoteService.sendMailAndSms>
+      <ZhPoiController.getAvailable opt="true"></ZhPoiController.getAvailable>
+      <ZhPoiController.getUnAvailable opt="true"></ZhPoiController.getUnAvailable>
+      <DealBackOnlineController.backonline opt="true"></DealBackOnlineController.backonline>
+      <ProductOfflineApplyController.cancelOfflineApply opt="true"></ProductOfflineApplyController.cancelOfflineApply>
+      <ApiMarketingController.getDiagnosis opt="true"></ApiMarketingController.getDiagnosis>
+      <ApiServiceItemController.getAppAllAvailable opt="true"></ApiServiceItemController.getAppAllAvailable>
+    </com.meituan.cos.mtdeal2-web-sh>
+  </SCP>  
+  <AGENT> 
+    <com.sankuai.meishi.scp.mtagent>
+      <PerformanceController.overviews opt="true"></PerformanceController.overviews>
+      <PerformanceController.getOrgInfo opt="true"></PerformanceController.getOrgInfo>
+    </com.sankuai.meishi.scp.mtagent>
+    <com.sankuai.meishi.crm.agent.achiever>
+      <EmployeeController.getInfo opt="true"></EmployeeController.getInfo>
+      <ApplyController.query opt="true"></ApplyController.query>
+      <BillController.queryBillList opt="true"></BillController.queryBillList>
+    </com.sankuai.meishi.crm.agent.achiever>
+  </AGENT>
+</config>

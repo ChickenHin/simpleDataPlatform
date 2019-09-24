@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.meituan.qa.domain.mapper.AppkeyOctoDataMapper">
+    <resultMap id="appkeyOctoData" type="com.meituan.qa.bean.AppkeyOctoData">
+        <id column="id" jdbcType="INTEGER" property="id"></id>
+        <result column="tp95" jdbcType="INTEGER" property="tp95"></result>
+        <result column="tp99" jdbcType="INTEGER" property="tp99"></result>
+        <result column="successrate" jdbcType="DOUBLE" property="successrate"></result>
+        <result column="visit_count" jdbcType="INTEGER" property="visitCount"></result>
+        <result column="datatime" jdbcType="VARCHAR" property="datatime"></result>
+    </resultMap>
+
+    <insert id="insertAppkeyOctoData">
+        insert into appkey_octo_data (appkey,tp95,tp99,successrate,visit_count,datatime)
+        values (#{appkey}, #{tp95}, #{tp99}, #{successrate}, #{visitCount}, #{datatime})
+    </insert>
+
+    <select id="selectAppkeyOctoData" resultMap="appkeyOctoData">
+        select tp95,tp99,successrate,visit_count,datatime
+        from appkey_octo_data
+        where appkey = #{appkey} and <![CDATA[datatime >= #{startTime}]]> and <![CDATA[datatime <= #{endTime}]]>
+        group by datatime
+    </select>
+
+</mapper>
